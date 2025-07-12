@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>kfollow - متابعين مجاناً</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+    }
+    header {
+      background: #4a00e0;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 500px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      margin-top: 0;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background: #4a00e0;
+      color: white;
+      border: none;
+      padding: 12px;
+      margin-top: 15px;
+      width: 100%;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #3700b3;
+    }
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>kfollow</h1>
+    <p>احصل على متابعين إنستا وتيك توك مجاناً</p>
+  </header>
+
+  <div class="container">
+    <h2>طلب متابعين</h2>
+    <form action="https://api.whatsapp.com/send" method="get" target="_blank">
+      <label for="platform">اختر المنصة:</label>
+      <select id="platform" name="text">
+        <option value="إنستغرام">إنستغرام</option>
+        <option value="تيك توك">تيك توك</option>
+      </select>
+
+      <label for="username">رابط الحساب:</label>
+      <input type="text" id="username" name="text" required placeholder="ضع رابط الحساب هنا" />
+
+      <label for="followers">عدد المتابعين المطلوب:</label>
+      <input type="number" id="followers" name="text" required placeholder="مثال: 100" />
+
+      <label for="contact">وسيلة التواصل (واتساب أو تليغرام):</label>
+      <input type="text" id="contact" name="text" required placeholder="7514044205" />
+
+      <button type="submit">إرسال الطلب</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 kfollow. جميع الحقوق محفوظة.</p>
+  </footer>
+</body>
+</html>
